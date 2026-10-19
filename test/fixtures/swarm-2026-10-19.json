@@ -1,0 +1,32 @@
+{
+ "_source": "GET https://api.imd.fun/swarm, recorded 2026-10-19 (seats/events/owners dropped)",
+ "at": 1792441195612,
+ "health": {
+  "reachable": true,
+  "agentsOnline": 1039,
+  "workingNow": 10,
+  "acceptedLastDay": 2540,
+  "jobsDoneLastDay": 158,
+  "oraclesDoneLastDay": 44,
+  "seatsEnrolled": 1050,
+  "pendingVerification": 0,
+  "pendingDeployment": 0,
+  "pendingSites": 0,
+  "verifierUp": true,
+  "publisherUp": true,
+  "deployerUp": true
+ },
+ "counts": {
+  "jobs": 14381,
+  "jobStates": {
+   "blocked": 282,
+   "cancelled": 127,
+   "completed": 13967,
+   "executing": 5
+  },
+  "tasksInProgress": 7,
+  "launchesLive": 692,
+  "sites": 403,
+  "inferenceTokens": 212086530662
+ }
+}

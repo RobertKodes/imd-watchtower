@@ -1,0 +1,13 @@
+{
+ "_source": "Reconstructed from the 2026-10-19 deployer incident as observed on GET https://api.imd.fun/launches/<id>: status \"admitted\" with deployFailure \"RPC Request failed... Monthly capacity limit exceeded\" while GET /swarm still reported deployerUp true. The id, number and timestamps are placeholders; the status and failure text are as observed (the middle of the message was elided in the original report).",
+ "id": "00000000-0000-4000-8000-000000000001",
+ "launchNumber": 9999,
+ "kind": "evm_contracts",
+ "status": "admitted",
+ "chainId": 1,
+ "parkedReason": null,
+ "deployFailure": "RPC Request failed... Monthly capacity limit exceeded",
+ "attestationFailure": null,
+ "createdAt": "2026-10-19T12:00:00.000Z",
+ "updatedAt": "2026-10-19T12:05:00.000Z"
+}

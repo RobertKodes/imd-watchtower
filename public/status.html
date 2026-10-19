@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IMD Watchtower</title>
+<meta name="description" content="Independent status monitor for the IMD network: Intake admissions, deploys, jobs and swarm health.">
+<style>
+  :root {
+    --bg: #0b0d10; --panel: #12161b; --panel-2: #171c22; --line: #232a32;
+    --text: #e6e9ed; --muted: #8b95a1; --faint: #5c6670;
+    --ok: #3fb97f; --warn: #e3a33b; --crit: #ef5b5b; --accent: #7aa7ff;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); }
+  body { font: 14px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 28px 16px 40px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  h1 { font-size: 20px; margin: 0; letter-spacing: .2px; font-weight: 650; }
+  h1 small { color: var(--muted); font-weight: 400; font-size: 13px; margin-left: 8px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 28px 0 10px; font-weight: 600; }
+  .pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--line); font-weight: 600; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--faint); }
+  .ok .dot, .dot.ok { background: var(--ok); } .degraded .dot, .dot.warning { background: var(--warn); } .down .dot, .dot.critical { background: var(--crit); }
+  .meta { color: var(--muted); font-size: 12px; margin-top: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
+  @media (max-width: 860px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; min-width: 0; }
+  .card h3 { margin: 0 0 10px; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .kv { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; font-size: 13px; }
+  .kv dt { color: var(--muted); } .kv dd { margin: 0; text-align: right; font-family: var(--mono); font-size: 12.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .chart { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .chart svg { display: block; width: 100%; height: 90px; }
+  .legend { display: flex; gap: 16px; font-size: 12px; color: var(--muted); margin-top: 6px; flex-wrap: wrap; }
+  .legend i { display: inline-block; width: 10px; height: 2px; vertical-align: middle; margin-right: 6px; }
+  .inc { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--faint); border-radius: 8px; padding: 12px 14px; margin-bottom: 8px; }
+  .inc.critical { border-left-color: var(--crit); } .inc.warning { border-left-color: var(--warn); } .inc.resolved { border-left-color: var(--line); opacity: .85; }
+  .inc .t { font-weight: 600; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .inc .d { color: var(--muted); font-size: 13px; margin-top: 4px; overflow-wrap: anywhere; }
+  .inc .when { color: var(--faint); font-size: 12px; font-family: var(--mono); margin-top: 6px; }
+  .tag { font-size: 11px; padding: 1px 7px; border-radius: 4px; background: var(--panel-2); border: 1px solid var(--line); color: var(--muted); font-weight: 500; }
+  .empty { color: var(--muted); padding: 14px 16px; border: 1px dashed var(--line); border-radius: 8px; }
+  footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  .err { color: var(--warn); font-size: 12px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>IMD Watchtower <small>independent monitor for the IMD network</small></h1>
+      <div class="meta" id="meta">loading…</div>
+    </div>
+    <div class="pill" id="overall"><span class="dot"></span><span>…</span></div>
+  </header>
+
+  <div class="grid">
+    <div class="card"><h3><span class="dot" id="d-intake"></span>Intake (Ethereum)</h3><dl class="kv" id="c-intake"></dl></div>
+    <div class="card"><h3><span class="dot" id="d-swarm"></span>Swarm</h3><dl class="kv" id="c-swarm"></dl></div>
+    <div class="card"><h3><span class="dot" id="d-launches"></span>Launches</h3><dl class="kv" id="c-launches"></dl></div>
+    <div class="card"><h3><span class="dot" id="d-jobs"></span>Jobs</h3><dl class="kv" id="c-jobs"></dl></div>
+  </div>
+  <div class="err" id="errors"></div>
+
+  <h2>Intake backlog, last 3 hours</h2>
+  <div class="chart">
+    <svg id="chart" viewBox="0 0 1000 90" preserveAspectRatio="none" aria-label="Pending Intake requests over time"></svg>
+    <div class="legend"><span><i style="background:var(--warn)"></i>requests waiting for admission</span><span><i style="background:var(--accent)"></i>agents online (scaled)</span></div>
+  </div>
+
+  <h2>Open incidents</h2>
+  <div id="open"></div>
+
+  <h2>History</h2>
+  <div id="history"></div>
+
+  <footer>
+    <span>Reads only public IMD endpoints and Ethereum RPCs. JSON: <a href="/status">/status</a> · <a href="/incidents">/incidents</a></span>
+    <span>by <a href="https://getnightshift.tech" target="_blank" rel="noopener">NIGHTSHIFT</a> · <a href="https://github.com/RobertKodes/nightshift" target="_blank" rel="noopener">GitHub</a></span>
+  </footer>
+</div>
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const kv = (rows) => rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd title="${esc(v)}">${esc(v ?? '-')}</dd>`).join('');
+const ago = (iso) => { if (!iso) return '-'; const s = Math.round((Date.now() - Date.parse(iso)) / 1000); return s < 90 ? `${s}s ago` : s < 5400 ? `${Math.round(s / 60)} min ago` : `${Math.round(s / 3600)} h ago`; };
+const fmtTime = (iso) => iso ? iso.replace('T', ' ').replace(/\.\d+Z$/, 'Z') : '';
+const yes = (b) => b === true ? 'up' : b === false ? 'DOWN' : '-';
+const dur = (a, b) => { const m = Math.round((Date.parse(b || new Date().toISOString()) - Date.parse(a)) / 60000); return m >= 60 ? `${Math.floor(m / 60)}h ${m % 60}m` : `${m}m`; };
+
+function worst(incs, scopes) {
+  const hit = incs.filter((i) => scopes.includes(i.scope));
+  return hit.some((i) => i.severity === 'critical') ? 'critical' : hit.length ? 'warning' : 'ok';
+}
+
+function incidentHtml(i) {
+  const cls = i.resolvedAt ? 'resolved' : i.severity;
+  return `<div class="inc ${cls}">
+    <div class="t"><span class="dot ${i.resolvedAt ? '' : i.severity}"></span>${esc(i.title)}
+      <span class="tag">${esc(i.severity)}</span><span class="tag">${esc(i.scope)}</span>${i.source === 'backfill' ? '<span class="tag">backfill replay</span>' : ''}</div>
+    <div class="d">${esc(i.detail)}</div>
+    <div class="when">opened ${fmtTime(i.openedAt)}${i.resolvedAt ? ` · resolved ${fmtTime(i.resolvedAt)} · lasted ${dur(i.openedAt, i.resolvedAt)}` : ` · open ${dur(i.openedAt)}`}</div>
+  </div>`;
+}
+
+function chart(samples) {
+  const svg = $('chart');
+  if (!samples.length) { svg.innerHTML = ''; return; }
+  const W = 1000, H = 90, n = samples.length;
+  const maxP = Math.max(3, ...samples.map((s) => s.pending || 0));
+  const maxA = Math.max(1, ...samples.map((s) => s.agentsOnline || 0));
+  const x = (i) => n === 1 ? W : (i / (n - 1)) * W;
+  const line = (f, max) => samples.map((s, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${(H - 4 - ((f(s) || 0) / max) * (H - 12)).toFixed(1)}`).join('');
+  svg.innerHTML = `<line x1="0" y1="${H - 4}" x2="${W}" y2="${H - 4}" stroke="var(--line)"/>
+    <path d="${line((s) => s.agentsOnline, maxA)}" fill="none" stroke="var(--accent)" stroke-width="1.5" vector-effect="non-scaling-stroke" opacity=".7"/>
+    <path d="${line((s) => s.pending, maxP)}" fill="none" stroke="var(--warn)" stroke-width="2" vector-effect="non-scaling-stroke"/>`;
+}
+
+async function load() {
+  try {
+    const [st, inc] = await Promise.all([fetch('/status').then((r) => r.json()), fetch('/incidents').then((r) => r.json())]);
+    const open = st.openIncidents || [];
+    const label = { ok: 'All systems normal', degraded: 'Degraded', down: 'Incident in progress' }[st.status] || st.status;
+    $('overall').className = `pill ${st.status}`;
+    $('overall').innerHTML = `<span class="dot"></span><span>${esc(label)}</span>`;
+    $('meta').textContent = st.checkedAt ? `Last check ${ago(st.checkedAt)} · every ${st.intervalSeconds}s` : 'Waiting for the first check…';
+
+    const it = st.intake || {};
+    $('c-intake').innerHTML = kv([
+      ['chain head', it.head ? it.head.number : '-'],
+      ['last admitted block', it.lastAdmittedBlock],
+      ['waiting', it.pending ?? '-'],
+      ['oldest waiting', it.oldestPendingMinutes != null ? `${it.oldestPendingMinutes} min` : '-'],
+      ['plane cursor lag', it.planeLag != null ? `${it.planeLag} blocks` : '-'],
+    ]);
+    const sw = (st.swarm && st.swarm.health) || {};
+    $('c-swarm').innerHTML = kv([
+      ['agents online', sw.agentsOnline != null ? `${sw.agentsOnline} / ${sw.seatsEnrolled}` : '-'],
+      ['verifier', yes(sw.verifierUp)], ['publisher', yes(sw.publisherUp)], ['deployer', yes(sw.deployerUp)],
+      ['working now', sw.workingNow],
+    ]);
+    const la = st.launches || {};
+    const counts = la.counts || {};
+    $('c-launches').innerHTML = kv([
+      ['live (recent)', counts.live ?? 0], ['parked (recent)', counts.parked ?? 0],
+      ['in progress', (la.open || []).filter((l) => l.status !== 'parked').length],
+      ['deploy failures', (la.open || []).filter((l) => l.deployFailure).length],
+      ['total live', st.swarm ? st.swarm.launchesLive : '-'],
+    ]);
+    const js = (st.swarm && st.swarm.jobStates) || {};
+    $('c-jobs').innerHTML = kv([
+      ['executing', st.jobs ? st.jobs.executing : '-'], ['completed', js.completed], ['blocked', js.blocked], ['cancelled', js.cancelled],
+      ['stuck threshold', `${st.thresholds.jobStaleMinutes} min idle`],
+    ]);
+    for (const [id, scopes] of [['intake', ['intake', 'health']], ['swarm', ['swarm', 'api']], ['launches', ['launches']], ['jobs', ['jobs']]]) {
+      $(`d-${id}`).className = `dot ${worst(open, scopes)}`;
+    }
+    $('errors').textContent = (st.errors || []).length ? `Check errors: ${st.errors.join(' · ')}` : '';
+    chart(st.samples || []);
+    $('open').innerHTML = open.length ? open.map(incidentHtml).join('') : '<div class="empty">No open incidents.</div>';
+    const hist = (inc.incidents || []).filter((i) => i.resolvedAt);
+    $('history').innerHTML = hist.length ? hist.map(incidentHtml).join('') : '<div class="empty">No resolved incidents in the last 7 days.</div>';
+  } catch (e) {
+    $('meta').textContent = `Could not reach the watchtower API: ${e.message}`;
+  }
+}
+load();
+setInterval(load, 30000);
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "imd-watchtower",
+  "version": "0.1.0",
+  "description": "Open-source monitor for the IMD (identity.md) network: Intake indexer stalls, deploy failures, stuck jobs, swarm health.",
+  "license": "MIT",
+  "author": "NIGHTSHIFT (https://getnightshift.tech)",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "bin": { "imd-watchtower": "dist/cli.js" },
+  "scripts": {
+    "start": "tsx src/cli.ts watch",
+    "once": "tsx src/cli.ts once",
+    "backfill": "tsx src/cli.ts backfill",
+    "build": "tsc -p tsconfig.json",
+    "serve": "node dist/cli.js watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "screenshot": "node scripts/screenshot.mjs"
+  },
+  "dependencies": {
+    "viem": "^2.57.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "puppeteer-core": "^25.14.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

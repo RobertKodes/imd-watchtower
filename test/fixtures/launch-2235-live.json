@@ -1,0 +1,13 @@
+{
+ "_source": "GET /launches/81c00c6e-..., recorded 2026-10-19 (trimmed)",
+ "id": "81c00c6e-5258-4090-a168-f92e7b231bd4",
+ "launchNumber": 2235,
+ "kind": "evm_contracts",
+ "status": "live",
+ "chainId": 1,
+ "parkedReason": null,
+ "deployFailure": null,
+ "attestationFailure": null,
+ "createdAt": "2026-10-19T13:59:35.788Z",
+ "updatedAt": "2026-10-19T14:00:40.619Z"
+}

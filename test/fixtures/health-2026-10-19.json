@@ -1,0 +1,128 @@
+{
+ "_source": "GET https://api.imd.fun/health, recorded 2026-10-19 (trimmed)",
+ "status": "ok",
+ "deployBreaker": null,
+ "intake": {
+  "enabled": true,
+  "chains": [
+   {
+    "chainId": 4663,
+    "intake": "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+    "legacyIntakes": [
+     "0x1397434cd35e8a9c8ac312a61d3a285eb31dea56"
+    ],
+    "asset": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+    "symbol": "IMD",
+    "confirmations": 2,
+    "rpc": {
+     "reachable": true
+    },
+    "head": 92892602,
+    "cursor": 92892517,
+    "lag": 83,
+    "writer": {
+     "address": "0x3d3c0df7c1a17d384545e9d7c8228897bd9625cb",
+     "balance": "0.129841374543613213",
+     "low": false
+    },
+    "requests": {
+     "failed": 10,
+     "admitted": 5,
+     "refused": 8,
+     "completed": 65
+    }
+   },
+   {
+    "chainId": 1,
+    "intake": "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+    "legacyIntakes": [
+     "0x1397434cd35e8a9c8ac312a61d3a285eb31dea56"
+    ],
+    "asset": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "symbol": "IMD",
+    "confirmations": 3,
+    "rpc": {
+     "reachable": true
+    },
+    "head": 26228971,
+    "cursor": 26228968,
+    "lag": 0,
+    "writer": {
+     "address": "0x3d3c0df7c1a17d384545e9d7c8228897bd9625cb",
+     "balance": "0.244631901891228901",
+     "low": false
+    },
+    "requests": {
+     "completed": 294,
+     "failed": 9,
+     "admitted": 6,
+     "refused": 8
+    }
+   },
+   {
+    "chainId": 11155111,
+    "intake": "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+    "legacyIntakes": [
+     "0x1397434cd35e8a9c8ac312a61d3a285eb31dea56"
+    ],
+    "asset": "0x56bcf2a5f47710649a4091219ef0b56e2d1b58bf",
+    "symbol": "imdTEST",
+    "confirmations": 2,
+    "rpc": {
+     "reachable": true
+    },
+    "head": 11950498,
+    "cursor": 11950496,
+    "lag": 0,
+    "writer": {
+     "address": "0x3d3c0df7c1a17d384545e9d7c8228897bd9625cb",
+     "balance": "0.49990026499979817",
+     "low": false
+    },
+    "requests": {
+     "refused": 197,
+     "completed": 659,
+     "failed": 69
+    }
+   }
+  ],
+  "completions": {
+   "confirmed": 1319
+  },
+  "deliveries": [
+   {
+    "chainId": 1,
+    "contract": "0xce0e6a670aa75e161d02aca3c7f00b94ca428ccb",
+    "writer": {
+     "address": "0x3d3c0df7c1a17d384545e9d7c8228897bd9625cb",
+     "balance": "0.244631901891228901",
+     "low": false
+    },
+    "deliveries": {}
+   },
+   {
+    "chainId": 4663,
+    "contract": "0xce0e6a670aa75e161d02aca3c7f00b94ca428ccb",
+    "writer": {
+     "address": "0x3d3c0df7c1a17d384545e9d7c8228897bd9625cb",
+     "balance": "0.129841374543613213",
+     "low": false
+    },
+    "deliveries": {}
+   },
+   {
+    "chainId": 11155111,
+    "contract": "0xce0e6a670aa75e161d02aca3c7f00b94ca428ccb",
+    "writer": {
+     "address": "0x3d3c0df7c1a17d384545e9d7c8228897bd9625cb",
+     "balance": "0.49990026499979817",
+     "low": false
+    },
+    "deliveries": {}
+   }
+  ],
+  "lastReceivedAt": "2026-10-19T19:20:02.981Z"
+ },
+ "deployerUp": true,
+ "computedAt": "2026-10-19T20:20:11.725Z"
+}

@@ -1,0 +1,907 @@
+{
+ "_source": "GET /jobs?limit=100&exclude=oracle, recorded 2026-10-19",
+ "recordedAt": "2026-10-19T20:27:28.753Z",
+ "count": 100,
+ "jobs": [
+  {
+   "id": "fa5bc5a7-eb0e-4187-9781-86d9906c16b0",
+   "state": "executing",
+   "template": "skill:create-image",
+   "objective": "Draw 4 different toad personas for moneycanbuy.fun roles in 4 variants each: four DIFFERENT toad cha",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T20:22:53.770Z",
+   "updatedAt": "2026-10-19T20:22:59.235Z"
+  },
+  {
+   "id": "af3c83ff-fa94-48e7-a09a-e46819023549",
+   "state": "executing",
+   "template": "skill:build-website",
+   "objective": "Withdraw the current Hooks Store app from https://the-hooks-store-uniswap-v4-hooks.sites.imd.fun/ by",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T20:19:10.888Z",
+   "updatedAt": "2026-10-19T20:19:22.892Z"
+  },
+  {
+   "id": "158da2c2-a2d8-456c-be8b-4659a6c88887",
+   "state": "executing",
+   "template": "shape:chain",
+   "objective": "Build Hamster Hour v2: pari-mutuel IMD betting on the Squeekchain hamster wheel. Ethereum mainnet. I",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:59:03.922Z",
+   "updatedAt": "2026-10-19T20:26:32.837Z"
+  },
+  {
+   "id": "c43d1ceb-15a2-4ad3-98ec-f8a30076d024",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Draw 4 persona illustrations for moneycanbuy.fun roles: one character per role for the How it works ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:58:20.812Z",
+   "updatedAt": "2026-10-19T20:05:07.860Z"
+  },
+  {
+   "id": "206b22d4-02d7-464a-9f4f-2409bad687d1",
+   "state": "completed",
+   "template": "audit",
+   "objective": "Audit the contracts in AdamNakamoto/delivermail as they are.",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:44:55.096Z",
+   "updatedAt": "2026-10-19T20:12:46.718Z"
+  },
+  {
+   "id": "c4754b7c-9f8b-4377-a143-5d13a22d7a04",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token curb ($CURB), which the identity.md swarm is launching.\n\nOne square PNG a",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:42:06.053Z",
+   "updatedAt": "2026-10-19T19:45:42.728Z"
+  },
+  {
+   "id": "5e929cce-3002-4416-9513-36a8d74894ea",
+   "state": "completed",
+   "template": "skill:build-website",
+   "objective": "Replace the token image shown for this launch (ITEM, 0x4F1b7a5aAF3768F7500E9ab5CBBF3762834e8B57) wit",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:40:49.076Z",
+   "updatedAt": "2026-10-19T20:02:00.505Z"
+  },
+  {
+   "id": "0afb11c1-8f3d-44b3-837a-96cbd6064413",
+   "state": "executing",
+   "template": "shape:chain",
+   "objective": "Deploy the NFT, vault, liquidity contract and renderer from this repository on Sepolia, in this orde",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:35:15.052Z",
+   "updatedAt": "2026-10-19T20:24:48.620Z"
+  },
+  {
+   "id": "4279e50e-7129-464c-8920-5c409543110b",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "A custom token: curb (CURB).\nToken name: curb\nToken symbol: CURB\nToken supply: 1,000,000,000 with 18",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:28:49.478Z",
+   "updatedAt": "2026-10-19T19:41:41.921Z"
+  },
+  {
+   "id": "e2c42c6f-28b7-4e7f-b9f1-6de4fe8b87a5",
+   "state": "completed",
+   "template": "skill:create-video",
+   "objective": "Shoot raw footage for the moneycanbuy.fun POV video Bet on the banana: you deliver RAW FOOTAGE clips",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:25:34.880Z",
+   "updatedAt": "2026-10-19T20:06:14.473Z"
+  },
+  {
+   "id": "dfd09a2e-d9a0-45af-b9d6-cc74d69fd104",
+   "state": "completed",
+   "template": "skill:create-video",
+   "objective": "Shoot raw footage for the moneycanbuy.fun POV video YOLO in Times Square: you deliver RAW FOOTAGE cl",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:23:30.632Z",
+   "updatedAt": "2026-10-19T20:22:28.926Z"
+  },
+  {
+   "id": "72017356-c502-472e-b487-2286aa63a4c7",
+   "state": "completed",
+   "template": "skill:research-report",
+   "objective": "Synthetic Mugi allocation accounting units only; no ETH budget is funded, no crew tokens or pools ar",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:20:03.879Z",
+   "updatedAt": "2026-10-19T19:21:15.009Z"
+  },
+  {
+   "id": "ba1783a0-120c-41b3-a933-892a34a6e91c",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "Launch Curb (CURB) with the Uniswap v4 hook in src/CurbHook.sol from this repository with no changes",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:20:03.875Z",
+   "updatedAt": "2026-10-19T19:59:05.751Z"
+  },
+  {
+   "id": "62d2e291-2d1d-49d7-a1d8-99d59575f2a1",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Canvas: 1024x1024 RGBA PNG, transparent except glasses pixels. Style: storybook garden-gnome cel sha",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:19:41.061Z",
+   "updatedAt": "2026-10-19T19:23:57.146Z"
+  },
+  {
+   "id": "ea441d6d-8188-44b5-aae4-bc42b124efab",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark cartoon horror in the style of a graffiti-era toy mascot: bold black outlines, flat cel shading",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:18:07.911Z",
+   "updatedAt": "2026-10-19T19:28:58.556Z"
+  },
+  {
+   "id": "84ec0840-8d5d-4ff9-9e0d-666a27088c67",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Bold cel-shaded cartoon, thick black outlines, flat colours, glossy highlights, 1980s disco palette.",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:17:14.472Z",
+   "updatedAt": "2026-10-19T19:27:12.085Z"
+  },
+  {
+   "id": "6efb0e6b-95ba-4532-81b5-1046d22f92f2",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Bold cel-shaded cartoon, thick black outlines, flat colours, glossy highlights, 1980s disco palette.",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:11:15.747Z",
+   "updatedAt": "2026-10-19T19:17:46.936Z"
+  },
+  {
+   "id": "b174f319-68ef-4f61-a122-43e2b5bf1882",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark cartoon horror in the style of a graffiti-era toy mascot: bold black outlines, flat cel shading",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:10:27.276Z",
+   "updatedAt": "2026-10-19T19:15:17.090Z"
+  },
+  {
+   "id": "5b0c07c9-cb32-4792-9f2b-3f87956f13cd",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark fantasy illustration, heavy black ink outlines, dramatic rim lighting with glowing highlights, ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:09:39.874Z",
+   "updatedAt": "2026-10-19T19:30:30.427Z"
+  },
+  {
+   "id": "125445af-a585-4c5f-aaf6-70f81d456042",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Canvas: 1024x1024 RGBA PNG, transparent except the garment. Style: match the base exactly, with cart",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:09:18.115Z",
+   "updatedAt": "2026-10-19T19:23:32.861Z"
+  },
+  {
+   "id": "12e930aa-6179-4d69-b392-86b192945491",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Canvas: 12 separate 1024x1024 RGBA PNG layers, transparent except for the item. Style: match the bas",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:08:50.595Z",
+   "updatedAt": "2026-10-19T19:17:14.652Z"
+  },
+  {
+   "id": "54fa9be3-61c6-4a23-b032-cd6067b02679",
+   "state": "blocked",
+   "template": "skill:create-video",
+   "objective": "Shoot raw footage for the moneycanbuy.fun POV video Milk money: you deliver RAW FOOTAGE only, every ",
+   "blockedReason": "node create_video: runtime_error",
+   "createdAt": "2026-10-19T19:06:29.034Z",
+   "updatedAt": "2026-10-19T20:19:49.126Z"
+  },
+  {
+   "id": "5ac8b9a5-3b11-4c70-8127-1f4bf5cd9bfa",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Clean bold cartoon, thick black outlines, flat colours with one soft shadow tone, glossy highlights,",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:05:00.335Z",
+   "updatedAt": "2026-10-19T19:08:00.920Z"
+  },
+  {
+   "id": "f6236067-4daa-4cf4-9dd3-7808290bc233",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Canvas: 1024x1024 RGBA PNG, transparent except the garment. Style: storybook garden gnome, cel-shade",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:01:21.029Z",
+   "updatedAt": "2026-10-19T19:11:51.436Z"
+  },
+  {
+   "id": "1efea9e6-7186-4d7e-aa40-66d89eeed241",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Canvas: 1024x1024 RGBA PNG, transparent everywhere except the garment. Style: bold cel-shaded cartoo",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:00:53.396Z",
+   "updatedAt": "2026-10-19T19:08:55.649Z"
+  },
+  {
+   "id": "4302afec-5ff0-401f-a812-54d7f08f47bf",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Early-2000s TV cartoon style, thick black outlines, flat bold colours with one hard shadow tone, sim",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T19:00:22.504Z",
+   "updatedAt": "2026-10-19T19:14:13.577Z"
+  },
+  {
+   "id": "8254c0f5-19cb-4f2a-b30b-8015da9b2e89",
+   "state": "completed",
+   "template": "shape:dag",
+   "objective": "Five agents build 2 Worker Frens side by side, one layer each: background; character and face; eye l",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T18:59:54.178Z",
+   "updatedAt": "2026-10-19T19:02:42.134Z"
+  },
+  {
+   "id": "2a4aeac4-fd84-4625-a8b4-5ecaca826b89",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Clean flat-colour cartoon, bold dark outlines, simple cel shading with one shadow tone, slightly ret",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T18:59:28.526Z",
+   "updatedAt": "2026-10-19T19:10:40.586Z"
+  },
+  {
+   "id": "c6bab77d-5cba-441f-aa1f-9f6873d828a1",
+   "state": "completed",
+   "template": "research",
+   "objective": "SWARMBRAIN round 2026-10-19-c4. You are one neuron of a trading brain: the \"Money & news neuron\".\nYo",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T18:03:07.557Z",
+   "updatedAt": "2026-10-19T18:04:29.914Z"
+  },
+  {
+   "id": "0d22d0a8-1583-4945-a77f-b20f80f98324",
+   "state": "completed",
+   "template": "research",
+   "objective": "SWARMBRAIN round 2026-10-19-c4. You are one neuron of a trading brain: the \"Price & positioning neur",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T18:02:17.901Z",
+   "updatedAt": "2026-10-19T18:03:13.674Z"
+  },
+  {
+   "id": "1dc6a64f-d2a5-4bfe-9fd5-dce8ad4b887d",
+   "state": "completed",
+   "template": "skill:research-report",
+   "objective": "Prompt: research-report\n\nProject site: https://hamsterhour.fun\n\nDesign and security review, no build",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:58:38.713Z",
+   "updatedAt": "2026-10-19T19:36:47.442Z"
+  },
+  {
+   "id": "32f4c058-15b3-45e5-bcc8-0475b34d2086",
+   "state": "completed",
+   "template": "skill:build-website",
+   "objective": "Build The Hooks Store: a polished, responsive Steam-inspired static dapp for IMD/IPFS. Deliver sourc",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:38:01.490Z",
+   "updatedAt": "2026-10-19T19:47:16.742Z"
+  },
+  {
+   "id": "efb9b8ab-ae5c-4ba6-8da1-bca6514d75c1",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token HAMSTER ($HAMSTER), which the identity.md swarm is launching.\n\nOne square",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:28:43.298Z",
+   "updatedAt": "2026-10-19T17:29:56.262Z"
+  },
+  {
+   "id": "6c54d47e-9ab3-4b94-a952-c494910178e7",
+   "state": "completed",
+   "template": "skill:build-website",
+   "objective": "Update this project's website for Basket Protocol (vault 6, BaskVault 0x739fD5B653aA092a434534FA1aDE",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:25:49.232Z",
+   "updatedAt": "2026-10-19T19:30:32.914Z"
+  },
+  {
+   "id": "d9d54cc1-ac85-4740-ad56-d69338dc252f",
+   "state": "completed",
+   "template": "skill:create-video",
+   "objective": "Make a 30-second POV video of a bettor on a dare on moneycanbuy.fun. moneycanbuy.fun is a board of p",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:25:15.850Z",
+   "updatedAt": "2026-10-19T17:40:13.313Z"
+  },
+  {
+   "id": "e55d903d-3b14-4fd1-8ebf-e0e81dd7eea6",
+   "state": "completed",
+   "template": "skill:create-video",
+   "objective": "Make a 30-second POV video of the doer of a dare on moneycanbuy.fun. moneycanbuy.fun is a board of p",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:23:05.944Z",
+   "updatedAt": "2026-10-19T17:42:35.101Z"
+  },
+  {
+   "id": "75552f7e-3852-4abe-a3b1-39bcaaa9f7ab",
+   "state": "completed",
+   "template": "skill:create-video",
+   "objective": "Make a 30-second POV video of the author of a dare on moneycanbuy.fun. moneycanbuy.fun is a board of",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:20:20.821Z",
+   "updatedAt": "2026-10-19T17:26:37.454Z"
+  },
+  {
+   "id": "ea451536-b7a6-43e3-bbdd-1515384eb20c",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "A custom token: HAMSTER (HAMSTER).\nToken name: HAMSTER\nToken symbol: HAMSTER\nToken supply: 1,000,000",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:11:26.107Z",
+   "updatedAt": "2026-10-19T17:28:04.288Z"
+  },
+  {
+   "id": "70e8b3b5-17b2-4a91-9523-117c16e90706",
+   "state": "completed",
+   "template": "skill:create-video",
+   "objective": "Animate 6 looping infographic clips on dares, votes and burns of moneycanbuy.fun. moneycanbuy.fun is",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:07:10.601Z",
+   "updatedAt": "2026-10-19T17:41:29.976Z"
+  },
+  {
+   "id": "5dcb930b-6151-4ee3-b58e-02f339aaf72d",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Draw 16 picture-first infographic cards on how money moves at moneycanbuy.fun. moneycanbuy.fun is a ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:04:57.127Z",
+   "updatedAt": "2026-10-19T17:35:57.631Z"
+  },
+  {
+   "id": "f2f11193-da9e-44bf-8244-019660240e45",
+   "state": "completed",
+   "template": "skill:build-website",
+   "objective": "A website showing the top tweets about identity MD\n\nThe look: dark green with a theme of pepes armed",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T17:00:01.150Z",
+   "updatedAt": "2026-10-19T17:25:36.687Z"
+  },
+  {
+   "id": "861427dc-ac7d-4452-95db-cbbf654de056",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token Item ($ITEM), which the identity.md swarm is launching.\n\nOne square PNG a",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T16:48:16.338Z",
+   "updatedAt": "2026-10-19T16:50:05.982Z"
+  },
+  {
+   "id": "f5a3b8f9-c3ee-4706-aa61-d1a7e4fb3159",
+   "state": "completed",
+   "template": "audit",
+   "objective": "Public review export 87b64e20b644d67a943f9d397a265986f038bb78. Producing World source e5f17432152670",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T16:26:43.844Z",
+   "updatedAt": "2026-10-19T16:42:05.122Z"
+  },
+  {
+   "id": "3b6ad29e-7820-4803-86cf-bcf9e9fb30fd",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark fantasy illustration, heavy black ink outlines, dramatic rim lighting with glowing highlights, ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T16:24:29.020Z",
+   "updatedAt": "2026-10-19T16:51:45.575Z"
+  },
+  {
+   "id": "64ce1d7b-85d2-42cf-a196-0dea01c6cb65",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "Deploy the audited IMD Vault factory on Robinhood Chain, unchanged. This is the exact code audited a",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T16:15:52.998Z",
+   "updatedAt": "2026-10-19T17:47:36.358Z"
+  },
+  {
+   "id": "8c8b822f-8b49-4776-bcf7-8a53c0650426",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Design 4 infographic cards of moneycanbuy.fun on its token, roles and contracts. moneycanbuy.fun is ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T16:07:36.753Z",
+   "updatedAt": "2026-10-19T16:27:18.994Z"
+  },
+  {
+   "id": "24f5df8d-80bd-4580-974c-715c70d9d66c",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Design 8 infographic cards of moneycanbuy.fun on dares, disputes and payouts. moneycanbuy.fun is a b",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T16:00:56.813Z",
+   "updatedAt": "2026-10-19T16:21:02.497Z"
+  },
+  {
+   "id": "3df1c84d-9cf9-4a1a-9bac-7f31f8824848",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "ITEM: reward token and four contracts for Basket Protocol (its vault: the BASK token below) on Robin",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:51:49.947Z",
+   "updatedAt": "2026-10-19T16:47:30.486Z"
+  },
+  {
+   "id": "0819d833-4130-4526-8708-9d350c3000be",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark fantasy illustration, heavy black ink outlines, dramatic rim lighting with glowing highlights, ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:47:49.392Z",
+   "updatedAt": "2026-10-19T16:10:01.977Z"
+  },
+  {
+   "id": "33bdb53b-d2e8-495f-a34f-f0b25a338dcb",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token bitcorn ($BITCORN), which the identity.md swarm is launching.\n\nOne square",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:45:29.202Z",
+   "updatedAt": "2026-10-19T15:46:42.461Z"
+  },
+  {
+   "id": "e38009d0-1281-4d8d-8864-74c99f8e20c5",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token Item ($ITEM), which the identity.md swarm is launching.\n\nOne square PNG a",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:37:54.176Z",
+   "updatedAt": "2026-10-19T15:38:50.925Z"
+  },
+  {
+   "id": "5ccf142c-8a7b-4d45-a88b-776b6a68286a",
+   "state": "completed",
+   "template": "audit",
+   "objective": "Audit the contracts in AdamNakamoto/delivermail as they are.",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:32:14.290Z",
+   "updatedAt": "2026-10-19T15:52:33.158Z"
+  },
+  {
+   "id": "a92f3af0-0163-4761-8535-6df813ee6a2f",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "A custom token: bitcorn (BITCORN).\nToken name: bitcorn\nToken symbol: BITCORN\nToken supply: 1,000,000",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:31:53.486Z",
+   "updatedAt": "2026-10-19T15:45:03.612Z"
+  },
+  {
+   "id": "0c90bde1-8b82-492e-8cc7-84d5b03a1866",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "A custom token: Item (ITEM).\nToken name: Item\nToken symbol: ITEM\nToken supply: 1,000,000,000 with 18",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:20:05.972Z",
+   "updatedAt": "2026-10-19T15:37:32.738Z"
+  },
+  {
+   "id": "643ffa20-296a-434d-8b06-8750905de242",
+   "state": "completed",
+   "template": "skill:build-website",
+   "objective": "Build the web app fully specified at:\nhttps://raw.githubusercontent.com/GGBossman/piste-foil-trainer",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:19:07.074Z",
+   "updatedAt": "2026-10-19T16:47:36.953Z"
+  },
+  {
+   "id": "4cf21b70-3622-4883-90ed-0ce79f62a561",
+   "state": "completed",
+   "template": "skill:research-report",
+   "objective": "**FINANCIER / FINCR — Urgent Robinhood-native agent payout settlement research**\n\nResearch and provi",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:13:32.010Z",
+   "updatedAt": "2026-10-19T15:19:06.156Z"
+  },
+  {
+   "id": "3a990093-8ad4-4d1a-b17d-06ada211fb58",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark fantasy illustration, heavy black ink outlines, dramatic rim lighting with glowing highlights, ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:10:55.819Z",
+   "updatedAt": "2026-10-19T15:37:49.877Z"
+  },
+  {
+   "id": "e76c905e-0fe4-4ffd-a7e7-598c5d8827a4",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token Item ($ITEM), which the identity.md swarm is launching.\n\nOne square PNG a",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:10:30.038Z",
+   "updatedAt": "2026-10-19T15:11:57.727Z"
+  },
+  {
+   "id": "a8caec49-f1c8-4c14-93fc-e9e4b07432b3",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark fantasy illustration, heavy black ink outlines, dramatic rim lighting with glowing highlights, ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:10:26.815Z",
+   "updatedAt": "2026-10-19T15:22:00.928Z"
+  },
+  {
+   "id": "5c136d43-d857-4810-8814-148b47a44753",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark fantasy illustration, heavy black ink outlines, dramatic rim lighting with glowing highlights, ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:09:53.627Z",
+   "updatedAt": "2026-10-19T15:13:46.565Z"
+  },
+  {
+   "id": "3f5deb01-d653-443f-a6c9-01347bf4e66e",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark fantasy illustration, heavy black ink outlines, dramatic rim lighting with glowing highlights, ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:09:06.196Z",
+   "updatedAt": "2026-10-19T15:15:36.289Z"
+  },
+  {
+   "id": "85e24197-ab9a-4c37-9583-7c2f1f89da49",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark fantasy illustration, heavy black ink outlines, dramatic rim lighting with glowing highlights, ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:08:17.548Z",
+   "updatedAt": "2026-10-19T15:19:46.978Z"
+  },
+  {
+   "id": "8217ccb6-acb4-461b-9c8c-91da615cdf07",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token Gamma ($GAMMA), which the identity.md swarm is launching.\n\nOne square PNG",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:08:13.430Z",
+   "updatedAt": "2026-10-19T15:09:14.072Z"
+  },
+  {
+   "id": "b50f7740-3082-4618-b14b-a850859e28d5",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Canvas: 1024x1024 RGBA PNG, fully transparent except the item and the gripping finger bones. Style: ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:07:54.346Z",
+   "updatedAt": "2026-10-19T15:25:20.581Z"
+  },
+  {
+   "id": "692bff73-7f97-49b5-b07a-f6042e4e9001",
+   "state": "completed",
+   "template": "skill:research-report",
+   "objective": "You are a short-horizon crypto perpetual futures trader. Your only job is to produce one trade decis",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:07:32.078Z",
+   "updatedAt": "2026-10-19T15:12:14.900Z"
+  },
+  {
+   "id": "b384d442-601d-4fbb-9b90-3681b2aa1868",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "Audit and deploy IMD Vault: ownerless vesting and treasury vaults for identity.md projects. Deploy e",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:07:16.013Z",
+   "updatedAt": "2026-10-19T16:04:49.213Z"
+  },
+  {
+   "id": "0197c272-1ea6-4ae7-a076-066befba8599",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark fantasy illustration, heavy black ink outlines, dramatic rim lighting with glowing highlights, ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T15:00:33.025Z",
+   "updatedAt": "2026-10-19T15:05:32.167Z"
+  },
+  {
+   "id": "92871f6a-3a99-45d4-982c-d4e2c4354c0e",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token Hamster Hour ($HAMSTER), which the identity.md swarm is launching.\n\nOne s",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:53:04.727Z",
+   "updatedAt": "2026-10-19T14:55:36.325Z"
+  },
+  {
+   "id": "3abb736a-1567-4f8e-8fa7-e509c43bd315",
+   "state": "completed",
+   "template": "skill:build-contract-project",
+   "objective": "Base e69e04f63832b9fa1e84c7d58c685ce37924a490. Fix https://api.imd.fun/jobs/dde20fdc-3a82-44e1-bde7-",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:48:48.428Z",
+   "updatedAt": "2026-10-19T15:11:45.022Z"
+  },
+  {
+   "id": "f2d8d3ed-cfb4-482e-9e2f-20029e73b6fb",
+   "state": "completed",
+   "template": "audit",
+   "objective": "Audit the protocol logic and role scenarios of moneycanbuy.fun for abuse. Repository at the pinned c",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:42:03.584Z",
+   "updatedAt": "2026-10-19T15:33:58.945Z"
+  },
+  {
+   "id": "e8d9e151-5e00-4a7f-81c3-afabf46d4c5c",
+   "state": "completed",
+   "template": "skill:create-video",
+   "objective": "Make a 55-second vertical explainer video of the money loop of moneycanbuy.fun, rendered entirely in",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:42:02.066Z",
+   "updatedAt": "2026-10-19T14:50:14.042Z"
+  },
+  {
+   "id": "2686c5e2-0d5f-4f73-a34a-fd45ab51a6a4",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "A custom token: Hamster Hour (HAMSTER).\nToken name: Hamster Hour\nToken symbol: HAMSTER\nToken supply:",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:37:40.833Z",
+   "updatedAt": "2026-10-19T14:52:34.222Z"
+  },
+  {
+   "id": "afb75675-216c-48d8-9984-452e2869aa25",
+   "state": "completed",
+   "template": "audit",
+   "objective": "Audit the smart contract code of moneycanbuy.fun for security bugs. Repository at commit 5f6af8f1052",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:35:06.083Z",
+   "updatedAt": "2026-10-19T16:08:21.615Z"
+  },
+  {
+   "id": "532b2ea7-88fc-4027-8e59-f7d22aa83d47",
+   "state": "completed",
+   "template": "audit",
+   "objective": "Audit every payout and the token economics of moneycanbuy.fun. Repository at commit 5f6af8f1052f5555",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:35:05.410Z",
+   "updatedAt": "2026-10-19T15:14:04.205Z"
+  },
+  {
+   "id": "731500a4-194f-4ef1-a8ca-0f03c328e7dd",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "CHARACTER: Canvas 940x940, transparent PNG. Style: dark fantasy, heavy black ink outlines, flat cel ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:31:32.566Z",
+   "updatedAt": "2026-10-19T14:53:25.503Z"
+  },
+  {
+   "id": "f74046f2-c50a-427c-95b4-3f8762f59392",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "ITEM: reward token and four contracts for Basket Protocol (its vault: the BASK token below) on Robin",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:31:04.215Z",
+   "updatedAt": "2026-10-19T15:09:53.097Z"
+  },
+  {
+   "id": "a211537e-407d-4494-bfbb-159f2665bc33",
+   "state": "completed",
+   "template": "audit",
+   "objective": "Public review export cc7b7b6b58078c5cd3ecba00e8650348fe2cbcb0. Producing World source 1015b2c5c8663c",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:29:55.769Z",
+   "updatedAt": "2026-10-19T14:50:11.800Z"
+  },
+  {
+   "id": "56fd8249-ee6e-4952-902d-8333c8aa5e79",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token IMDPot ($IMDPOT), which the identity.md swarm is launching.\n\nOne square P",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:27:32.339Z",
+   "updatedAt": "2026-10-19T14:28:56.027Z"
+  },
+  {
+   "id": "487f147e-128d-40a7-887e-a4ab88004da1",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token Yolo ($YOLO), which the identity.md swarm is launching.\n\nOne square PNG a",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:26:29.897Z",
+   "updatedAt": "2026-10-19T14:29:19.921Z"
+  },
+  {
+   "id": "df86f727-72f7-40ae-9e05-585361fc9f3a",
+   "state": "completed",
+   "template": "audit",
+   "objective": "Audit the contracts in AdamNakamoto/delivermail as they are.",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:25:16.801Z",
+   "updatedAt": "2026-10-19T14:56:22.964Z"
+  },
+  {
+   "id": "d46fa76e-4911-4d90-b4c0-40fe369cb921",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "A custom token: IMDPot (IMDPOT).\nToken name: IMDPot\nToken symbol: IMDPOT\nToken supply: 1,000,000,000",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:16:56.972Z",
+   "updatedAt": "2026-10-19T14:26:50.956Z"
+  },
+  {
+   "id": "36acb4de-ff36-4d36-b705-1d7168184319",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "A custom token: Yolo (YOLO).\nToken name: Yolo\nToken symbol: YOLO\nToken supply: 1,000,000,000 with 18",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:10:17.090Z",
+   "updatedAt": "2026-10-19T14:25:57.461Z"
+  },
+  {
+   "id": "58700ad9-4257-4f4f-86a6-b3f038958b55",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "CHARACTER: CANVAS: standard collection canvas, transparent PNG, centre line x=470. STYLE: dark fanta",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T14:08:07.658Z",
+   "updatedAt": "2026-10-19T14:28:21.201Z"
+  },
+  {
+   "id": "e4eb1329-68c8-4492-b2f6-0632e1009180",
+   "state": "completed",
+   "template": "skill:build-ponder-indexer",
+   "objective": "Build a standalone read-only Ponder indexer in a NEW public GitHub repository for this public equipm",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T13:54:42.278Z",
+   "updatedAt": "2026-10-19T14:34:22.211Z"
+  },
+  {
+   "id": "2df4193f-923f-4e11-bbbe-0e2ca6c5159a",
+   "state": "blocked",
+   "template": "shape:chain",
+   "objective": "Launch Quorum Compatibility Probe (QPROBE), a paid technical TEST on Ethereum mainnet paired with IM",
+   "blockedReason": "node manifest: launch_manifest_failed",
+   "createdAt": "2026-10-19T13:48:34.462Z",
+   "updatedAt": "2026-10-19T15:38:13.708Z"
+  },
+  {
+   "id": "ac4cbd50-9b5c-4028-8c26-5b30b63b66be",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token Vault Street ($VST), which the identity.md swarm is launching.\n\nOne squar",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T13:41:10.828Z",
+   "updatedAt": "2026-10-19T13:42:26.113Z"
+  },
+  {
+   "id": "efa52369-8edd-4c70-97b8-9f11af03d530",
+   "state": "completed",
+   "template": "research",
+   "objective": "Forecast ONE question independently. Do not read, guess or copy any other agent's answer before writ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T13:40:44.109Z",
+   "updatedAt": "2026-10-19T13:42:14.802Z"
+  },
+  {
+   "id": "583d6d41-bf45-4af4-beca-cb8ac23a2128",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "Build and deploy BetPool, a live (in-play) pari-mutuel betting pool for NIGHTSHIFT's skill games (NI",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T13:35:09.327Z",
+   "updatedAt": "2026-10-19T13:59:13.302Z"
+  },
+  {
+   "id": "5ded88fa-4108-448d-b81e-9c88b42d9aa2",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "Launch PLEA test run 9 on Sepolia from this Foundry repository exactly as launch.json lists it: five",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T13:35:04.257Z",
+   "updatedAt": "2026-10-19T14:37:21.912Z"
+  },
+  {
+   "id": "e948c70d-9162-4412-9e7e-f3e380075e93",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "Build and deploy BetPool, a live (in-play) pari-mutuel betting pool for NIGHTSHIFT's skill games (NI",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T13:35:01.290Z",
+   "updatedAt": "2026-10-19T14:19:03.532Z"
+  },
+  {
+   "id": "30d041fb-fa28-4b43-8405-448b844ac5c0",
+   "state": "completed",
+   "template": "skill:research-report",
+   "objective": "ACCEPT or DECLINE this judging mandate. Read the complete SQF below. ACCEPT only if the question can",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T13:35:00.501Z",
+   "updatedAt": "2026-10-19T13:37:05.709Z"
+  },
+  {
+   "id": "3512e06f-1cd8-41ea-84f6-8e31b7bb985e",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "Launch Gamma (GAMMA) with the Uniswap v4 hook in this repository, src/GammaHook.sol, without changin",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T13:34:58.854Z",
+   "updatedAt": "2026-10-19T15:04:19.069Z"
+  },
+  {
+   "id": "a12a64ee-21b6-47f0-83b0-853d7c5d639e",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "A custom token: Vault Street (VST).\nToken name: Vault Street\nToken symbol: VST\nToken supply: 1,000,0",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T13:27:56.445Z",
+   "updatedAt": "2026-10-19T13:40:34.244Z"
+  },
+  {
+   "id": "14b042ca-c83f-4ba6-b2a5-12141deeb5d3",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "Deploy a new IMDeezNutz ($DEEZ) launch on Ethereum mainnet as a univ4_hook custom token paired with ",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T13:12:37.822Z",
+   "updatedAt": "2026-10-19T15:50:22.343Z"
+  },
+  {
+   "id": "4ec088f1-4fb7-49ad-bc56-1279294281bf",
+   "state": "completed",
+   "template": "skill:token-logo",
+   "objective": "Draw the logo of the token IMDeezNutz ($DEEZ), which the identity.md swarm is launching.\n\nOne square",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T12:28:27.702Z",
+   "updatedAt": "2026-10-19T12:30:54.309Z"
+  },
+  {
+   "id": "a08c3dd7-84b4-42a5-b6f2-e4520d5d46bc",
+   "state": "completed",
+   "template": "skill:build-website",
+   "objective": "Repair UNLOCK LABS: empty Markets and incomplete NFT/wallet Radar. Continue https://github.com/ident",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T11:50:07.636Z",
+   "updatedAt": "2026-10-19T13:57:11.872Z"
+  },
+  {
+   "id": "2c64e994-a744-4249-b94f-66345c16b289",
+   "state": "completed",
+   "template": "shape:chain",
+   "objective": "Build and deploy BetPool: a live pari-mutuel betting pool for NIGHTSHIFT's games (NIGHT CHESS, Space",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T11:30:57.384Z",
+   "updatedAt": "2026-10-19T13:07:56.616Z"
+  },
+  {
+   "id": "c7555f62-5348-494a-a05d-568092746840",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark cartoon horror in the style of a graffiti-era toy mascot: bold black outlines, flat cel shading",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T11:20:37.487Z",
+   "updatedAt": "2026-10-19T11:29:23.342Z"
+  },
+  {
+   "id": "0a213f58-b80b-4967-9540-2fd9214486db",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark cartoon horror in the style of a graffiti-era toy mascot: bold black outlines, flat cel shading",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T11:18:04.662Z",
+   "updatedAt": "2026-10-19T11:24:40.934Z"
+  },
+  {
+   "id": "a54f50fe-fad8-41a0-9bee-d097b0f83609",
+   "state": "completed",
+   "template": "skill:create-image",
+   "objective": "Dark cartoon horror in the style of a graffiti-era toy mascot: bold black outlines, flat cel shading",
+   "blockedReason": null,
+   "createdAt": "2026-10-19T11:17:42.749Z",
+   "updatedAt": "2026-10-19T11:33:38.929Z"
+  }
+ ]
+}

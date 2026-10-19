@@ -1,0 +1,333 @@
+{
+ "_source": "GET https://api.imd.fun/intake/1/<tx>, recorded 2026-10-19 after the stall cleared",
+ "0xb1a5ff91484de3642540586a18ee40a6e8358988039cc16c14ddd6dd9b71c885": {
+  "chainId": 1,
+  "transactionHash": "0xb1a5ff91484de3642540586a18ee40a6e8358988039cc16c14ddd6dd9b71c885",
+  "entries": [
+   {
+    "logIndex": 262,
+    "blockNumber": 26224624,
+    "kind": "request",
+    "intake": "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+    "state": "completed",
+    "reason": null,
+    "detail": null,
+    "payer": "0x00856bd495941f3b95da5b7e374c76d822c9059e",
+    "asset": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "amount": "500000000000000000",
+    "requestId": "0x034a29d112d284eb3f61d343e819ac0ea35f12fe1c68290c85263c5415083e5e",
+    "action": "oracle.request",
+    "actionVersion": "oracle-1",
+    "bodyHash": "0x8a85376d956f4a54df2bd35cfb21638343e79f3c3d5c81630f10456ca3a6ad35",
+    "callback": {
+     "target": "0x00856bd495941f3b95da5b7e374c76d822c9059e",
+     "selector": "0x510379c7"
+    },
+    "deliverTo": null,
+    "order": {
+     "id": "ac7aafa9-26f7-4b45-b4b6-958b651bdc0f",
+     "status": "paid",
+     "action": "oracle.request",
+     "policyVersion": "oracle-1"
+    },
+    "admission": {
+     "id": "d7f2ab6a-1825-40c2-a882-b95a6f75b4ec",
+     "result": {
+      "attestationUrl": "/oracle/requests/ef3d612e-33e6-42bc-832f-a1e59a97f27e/attestation",
+      "jobId": "2b5efcd8-fb62-4035-b6f2-df45ee31342c",
+      "kind": "oracle",
+      "requestId": "ef3d612e-33e6-42bc-832f-a1e59a97f27e",
+      "statusUrl": "/oracle/requests/ef3d612e-33e6-42bc-832f-a1e59a97f27e"
+     },
+     "createdAt": "2026-10-19T05:47:43.856Z"
+    },
+    "completion": {
+     "state": "confirmed",
+     "status": 0,
+     "resultHash": "0x7602a930ba2c84e489fc6dd27a94d6f2cd2dc2164ec6f0339305ba760c79c9db",
+     "uri": "https://api.imd.fun/oracle/requests/ef3d612e-33e6-42bc-832f-a1e59a97f27e/attestation",
+     "txHash": "0x0bc18bdea9bf35e260e93025d66566d76fd767b33bb3ac2fdfd0b1f800d1d5f7",
+     "delivered": true,
+     "attempts": 1,
+     "detail": "completed in 0x0bc18bdea9bf35e260e93025d66566d76fd767b33bb3ac2fdfd0b1f800d1d5f7 at block 26224640"
+    },
+    "delivery": null,
+    "receivedAt": "2026-10-19T05:47:42.891Z",
+    "updatedAt": "2026-10-19T05:50:28.322Z"
+   },
+   {
+    "logIndex": 269,
+    "blockNumber": 26224624,
+    "kind": "request",
+    "intake": "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+    "state": "completed",
+    "reason": null,
+    "detail": null,
+    "payer": "0x00856bd495941f3b95da5b7e374c76d822c9059e",
+    "asset": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "amount": "500000000000000000",
+    "requestId": "0x66dd0c32a96e8f0887d7c600f7e7a316d8cc9ba44390d5d497f9027b6ccd149c",
+    "action": "oracle.request",
+    "actionVersion": "oracle-1",
+    "bodyHash": "0xf486972d7b3790f7f7a503811eadb816a39dc36c925041cf259f32199f23d1a6",
+    "callback": {
+     "target": "0x00856bd495941f3b95da5b7e374c76d822c9059e",
+     "selector": "0x510379c7"
+    },
+    "deliverTo": null,
+    "order": {
+     "id": "3764af3e-07fb-4baa-b655-baef266e7ca4",
+     "status": "paid",
+     "action": "oracle.request",
+     "policyVersion": "oracle-1"
+    },
+    "admission": {
+     "id": "9b7d0eb7-b39c-4b82-8ecf-abbfd4158aae",
+     "result": {
+      "attestationUrl": "/oracle/requests/9b9f5d22-06cd-4440-95fd-ad5e76ceaef4/attestation",
+      "jobId": "4146961e-2849-483c-9cdd-976c7908dc9a",
+      "kind": "oracle",
+      "requestId": "9b9f5d22-06cd-4440-95fd-ad5e76ceaef4",
+      "statusUrl": "/oracle/requests/9b9f5d22-06cd-4440-95fd-ad5e76ceaef4"
+     },
+     "createdAt": "2026-10-19T05:47:45.848Z"
+    },
+    "completion": {
+     "state": "confirmed",
+     "status": 0,
+     "resultHash": "0x2f56d095189dd9af5b5ca698b707ee8b83ae8e4396e5a602425338834ec6eb3a",
+     "uri": "https://api.imd.fun/oracle/requests/9b9f5d22-06cd-4440-95fd-ad5e76ceaef4/attestation",
+     "txHash": "0x98e30b55914833a14f91e952b3fd8e15751f9f6b2ec36c6435aba03dcadc1180",
+     "delivered": true,
+     "attempts": 1,
+     "detail": "completed in 0x98e30b55914833a14f91e952b3fd8e15751f9f6b2ec36c6435aba03dcadc1180 at block 26224636"
+    },
+    "delivery": null,
+    "receivedAt": "2026-10-19T05:47:44.149Z",
+    "updatedAt": "2026-10-19T05:49:37.981Z"
+   }
+  ]
+ },
+ "0xb34adaebd1725d19a0bd8bcf18b2c6c4ba2dd53de8119f927caa9f99078dd1e5": {
+  "chainId": 1,
+  "transactionHash": "0xb34adaebd1725d19a0bd8bcf18b2c6c4ba2dd53de8119f927caa9f99078dd1e5",
+  "entries": [
+   {
+    "logIndex": 1115,
+    "blockNumber": 26225162,
+    "kind": "request",
+    "intake": "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+    "state": "completed",
+    "reason": null,
+    "detail": null,
+    "payer": "0x6c4c78f2c3bdf4c4318fe305fb1c8bc1694d19b5",
+    "asset": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "amount": "500000000000000000",
+    "requestId": "0x294af0aefcc04e32bd8585fc18c21eb0aba75f19c89c10ef76938b05bd7cc67b",
+    "action": "launch.open",
+    "actionVersion": "launch-1",
+    "bodyHash": "0xec865228ab47e99f72a79f120059f71b4ec5296b297225c69d6b52cfd030a3ec",
+    "callback": null,
+    "deliverTo": null,
+    "order": {
+     "id": "4174cd76-fc1d-48c0-889b-dc0b780aea7f",
+     "status": "paid",
+     "action": "launch.open",
+     "policyVersion": "launch-1"
+    },
+    "admission": {
+     "id": "869eb4db-0a58-45db-b67d-181182fd8d34",
+     "result": {
+      "jobId": "e948c70d-9162-4412-9e7e-f3e380075e93",
+      "kind": "job",
+      "launch": true,
+      "resultUrl": "/jobs/e948c70d-9162-4412-9e7e-f3e380075e93/result",
+      "statusUrl": "/jobs/e948c70d-9162-4412-9e7e-f3e380075e93"
+     },
+     "createdAt": "2026-10-19T13:35:01.290Z"
+    },
+    "completion": {
+     "state": "confirmed",
+     "status": 0,
+     "resultHash": "0xb15dfee8ad09c6ea03688797dd21249f995fdc05a8354e22d692a371f67e5488",
+     "uri": "ipfs://bafybeiapsipu3gycryzdfrnnzuz2ma2ufa7un75p2vyjac5yodpk4alghm/result.json",
+     "txHash": "0x339d734606a0d43d8a0280787c129e4257cbab198b9f3f24f84caad36463cb47",
+     "delivered": false,
+     "attempts": 1,
+     "detail": "completed in 0x339d734606a0d43d8a0280787c129e4257cbab198b9f3f24f84caad36463cb47 at block 26227177"
+    },
+    "delivery": null,
+    "receivedAt": "2026-10-19T13:35:00.746Z",
+    "updatedAt": "2026-10-19T14:20:03.781Z"
+   }
+  ]
+ },
+ "0xb1118d4fb45a809214ce2ca7f106243775185d8a1222d2251c59394953a594d0": {
+  "chainId": 1,
+  "transactionHash": "0xb1118d4fb45a809214ce2ca7f106243775185d8a1222d2251c59394953a594d0",
+  "entries": [
+   {
+    "logIndex": 792,
+    "blockNumber": 26225468,
+    "kind": "request",
+    "intake": "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+    "state": "completed",
+    "reason": null,
+    "detail": null,
+    "payer": "0x4b91078b2374c956a65f7af0999cae0a935e6821",
+    "asset": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "amount": "500000000000000000",
+    "requestId": "0x8b2950737892b3257d6a0433dd429a4e21dc6493a85c9d83c3ea2af01d20dc19",
+    "action": "launch.open",
+    "actionVersion": "launch-1",
+    "bodyHash": "0xd82ea61fd20f4082524b79e85b90f6e1ddb3376a4d2e09d2d69f2cb51c6ea25c",
+    "callback": null,
+    "deliverTo": null,
+    "order": {
+     "id": "bcb15c3f-022b-447a-b436-64e245a81249",
+     "status": "paid",
+     "action": "launch.open",
+     "policyVersion": "launch-1"
+    },
+    "admission": {
+     "id": "3b2944a5-cdec-46db-8110-2eb8178e0a79",
+     "result": {
+      "jobId": "5ded88fa-4108-448d-b81e-9c88b42d9aa2",
+      "kind": "job",
+      "launch": true,
+      "resultUrl": "/jobs/5ded88fa-4108-448d-b81e-9c88b42d9aa2/result",
+      "statusUrl": "/jobs/5ded88fa-4108-448d-b81e-9c88b42d9aa2"
+     },
+     "createdAt": "2026-10-19T13:35:04.257Z"
+    },
+    "completion": {
+     "state": "confirmed",
+     "status": 0,
+     "resultHash": "0x1f816003d0f22b59ce2996d98465b43bfafe9e9140b7c20348667b1bf9e8d5f1",
+     "uri": "ipfs://bafybeidp5dqyrskqtthplyr4ugvixmyjkcds45u32rul4gi7b3wzkmnusa/result.json",
+     "txHash": "0xa1c6932618213dda52298f213f384a17d546626179b752f1134b6b11192f67ea",
+     "delivered": false,
+     "attempts": 1,
+     "detail": "completed in 0xa1c6932618213dda52298f213f384a17d546626179b752f1134b6b11192f67ea at block 26227267"
+    },
+    "delivery": null,
+    "receivedAt": "2026-10-19T13:35:02.022Z",
+    "updatedAt": "2026-10-19T14:38:02.893Z"
+   }
+  ]
+ },
+ "0x0a9d7674bef99eb8d81f35dbcbc0dd6862eb01fd6db77c028dce40f2c839cbec": {
+  "chainId": 1,
+  "transactionHash": "0x0a9d7674bef99eb8d81f35dbcbc0dd6862eb01fd6db77c028dce40f2c839cbec",
+  "entries": [
+   {
+    "logIndex": 490,
+    "blockNumber": 26225591,
+    "kind": "request",
+    "intake": "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+    "state": "completed",
+    "reason": null,
+    "detail": null,
+    "payer": "0x00856bd495941f3b95da5b7e374c76d822c9059e",
+    "asset": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "amount": "500000000000000000",
+    "requestId": "0x1da365dc37acb3eda8229e42c19a6bf741fd568a5b49d03f4ccc3aab846de6d6",
+    "action": "oracle.request",
+    "actionVersion": "oracle-1",
+    "bodyHash": "0xaecddeb4cb608a0a396011e88149acfa24b3f9c950f846e714afb0ed229763a7",
+    "callback": {
+     "target": "0x00856bd495941f3b95da5b7e374c76d822c9059e",
+     "selector": "0x510379c7"
+    },
+    "deliverTo": null,
+    "order": {
+     "id": "edddce38-812d-46b0-88c2-33929cea2961",
+     "status": "paid",
+     "action": "oracle.request",
+     "policyVersion": "oracle-1"
+    },
+    "admission": {
+     "id": "de74905b-f14e-4d39-954d-aa684c345754",
+     "result": {
+      "attestationUrl": "/oracle/requests/051da3e3-9848-4923-bfa6-eab52b0ca7ff/attestation",
+      "jobId": "be26f918-ace2-4613-bf70-697e242725f7",
+      "kind": "oracle",
+      "requestId": "051da3e3-9848-4923-bfa6-eab52b0ca7ff",
+      "statusUrl": "/oracle/requests/051da3e3-9848-4923-bfa6-eab52b0ca7ff"
+     },
+     "createdAt": "2026-10-19T13:35:07.335Z"
+    },
+    "completion": {
+     "state": "confirmed",
+     "status": 0,
+     "resultHash": "0x694b4ac2a45960167075fed311210120bdf9df9f49fd593c51497f3ea3d461d7",
+     "uri": "https://api.imd.fun/oracle/requests/051da3e3-9848-4923-bfa6-eab52b0ca7ff/attestation",
+     "txHash": "0x1b1251de50c672c6c7375cbe5fc08afc89da0394b7998ea6be2e4dcb57ff3aae",
+     "delivered": true,
+     "attempts": 1,
+     "detail": "completed in 0x1b1251de50c672c6c7375cbe5fc08afc89da0394b7998ea6be2e4dcb57ff3aae at block 26226978"
+    },
+    "delivery": null,
+    "receivedAt": "2026-10-19T13:35:04.519Z",
+    "updatedAt": "2026-10-19T13:40:14.295Z"
+   }
+  ]
+ },
+ "0x49aaa8a169a9883cbc514694755878e6fd21e51cc011258182e4fab51d99722b": {
+  "chainId": 1,
+  "transactionHash": "0x49aaa8a169a9883cbc514694755878e6fd21e51cc011258182e4fab51d99722b",
+  "entries": [
+   {
+    "logIndex": 1482,
+    "blockNumber": 26225706,
+    "kind": "request",
+    "intake": "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+    "state": "completed",
+    "reason": null,
+    "detail": null,
+    "payer": "0x53e1e2f33f05086086adf618ca92c3cb0ab111cd",
+    "asset": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "amount": "500000000000000000",
+    "requestId": "0xb017c69677a2c387a378f8fc861ee62eaa0141db91431da6b653cc359383277d",
+    "action": "oracle.request",
+    "actionVersion": "oracle-1",
+    "bodyHash": "0x55262483d0d51d329468cbc64fe21ab6c200cc14022a4466c6f12e381a09ced1",
+    "callback": {
+     "target": "0x53e1e2f33f05086086adf618ca92c3cb0ab111cd",
+     "selector": "0x510379c7"
+    },
+    "deliverTo": null,
+    "order": {
+     "id": "4724e7ee-eaff-4a10-9fdc-25add36e4bc6",
+     "status": "paid",
+     "action": "oracle.request",
+     "policyVersion": "oracle-1"
+    },
+    "admission": {
+     "id": "7fd315bf-7f8b-470c-9ec1-24d26a553afe",
+     "result": {
+      "attestationUrl": "/oracle/requests/846bac27-30b7-4a18-9c8f-2e2f12b90505/attestation",
+      "jobId": "3abd34f8-6b5f-4b3b-8fb1-65b67bd0f841",
+      "kind": "oracle",
+      "requestId": "846bac27-30b7-4a18-9c8f-2e2f12b90505",
+      "statusUrl": "/oracle/requests/846bac27-30b7-4a18-9c8f-2e2f12b90505"
+     },
+     "createdAt": "2026-10-19T13:35:08.776Z"
+    },
+    "completion": {
+     "state": "confirmed",
+     "status": 0,
+     "resultHash": "0x44b8b63e9e9da0d19936edb2791f3edb75a940b5c81d9d3959d070b31bc02e18",
+     "uri": "https://api.imd.fun/oracle/requests/846bac27-30b7-4a18-9c8f-2e2f12b90505/attestation",
+     "txHash": "0x66ac9d0c613d1e6dd8ad9f4b04a642f47f773c830814e93305039645db7ec76c",
+     "delivered": true,
+     "attempts": 1,
+     "detail": "completed in 0x66ac9d0c613d1e6dd8ad9f4b04a642f47f773c830814e93305039645db7ec76c at block 26226965"
+    },
+    "delivery": null,
+    "receivedAt": "2026-10-19T13:35:07.580Z",
+    "updatedAt": "2026-10-19T13:37:37.799Z"
+   }
+  ]
+ }
+}

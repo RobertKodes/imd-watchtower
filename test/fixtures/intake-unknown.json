@@ -1,0 +1,8 @@
+{
+ "_source": "GET /intake/1/<unseen tx>, recorded 2026-10-19",
+ "status": 404,
+ "body": {
+  "error": "unknown_transaction",
+  "detail": "no intake event from this transaction has been seen yet"
+ }
+}

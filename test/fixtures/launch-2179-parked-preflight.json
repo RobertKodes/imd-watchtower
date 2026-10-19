@@ -1,0 +1,13 @@
+{
+ "_source": "GET /launches/ec313159-..., recorded 2026-10-19 (a normal preflight refusal, trimmed)",
+ "id": "ec313159-bc9c-4d82-81ef-f053c152ed23",
+ "launchNumber": 2179,
+ "kind": "evm_contracts",
+ "status": "parked",
+ "chainId": 11155111,
+ "parkedReason": "preflight failed: the launch needs 143278811 gas, the chain's cap is 100000000 (half of Sepolia's block under EIP-8037); deploy fewer or smaller contracts",
+ "deployFailure": "preflight failed: the launch needs 143278811 gas, the chain's cap is 100000000 (half of Sepolia's block under EIP-8037); deploy fewer or smaller contracts",
+ "attestationFailure": null,
+ "createdAt": "2026-10-18T22:27:33.697Z",
+ "updatedAt": "2026-10-18T22:34:19.401Z"
+}
