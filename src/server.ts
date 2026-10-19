@@ -7,18 +7,18 @@ import { overall } from './monitor.js';
 import type { Store } from './store.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const pagePath = [join(here, '..', 'public', 'status.html'), join(process.cwd(), 'public', 'status.html')];
-
-function page(): string {
-  for (const p of pagePath) {
+function file(name: string): string | null {
+  for (const p of [join(here, '..', 'public', name), join(process.cwd(), 'public', name)]) {
     try {
       return readFileSync(p, 'utf8');
     } catch {
       /* next */
     }
   }
-  return '<!doctype html><title>IMD Watchtower</title><p>status.html missing</p>';
+  return null;
 }
+
+const page = (): string => file('status.html') ?? '<!doctype html><title>IMD Watchtower</title><p>status.html missing</p>';
 
 export function statusPayload(cfg: Config, store: Store) {
   const s = store.state;
@@ -49,6 +49,9 @@ export function startServer(cfg: Config, store: Store): Server {
       case '/index.html':
         res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' });
         return res.end(page());
+      case '/status.js':
+        res.writeHead(200, { 'content-type': 'text/javascript; charset=utf-8', 'cache-control': 'no-cache' });
+        return res.end(file('status.js') ?? '');
       case '/status':
         return json(200, statusPayload(cfg, store));
       case '/incidents': {
