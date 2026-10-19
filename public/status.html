@@ -78,7 +78,7 @@
   <div id="history"></div>
 
   <footer>
-    <span>Reads only public IMD endpoints and Ethereum RPCs. JSON: <a href="/status">/status</a> · <a href="/incidents">/incidents</a></span>
+    <span>Reads only public IMD endpoints and Ethereum RPCs. JSON: <a href="status">/status</a> · <a href="incidents">/incidents</a></span>
     <span>by <a href="https://getnightshift.tech" target="_blank" rel="noopener">NIGHTSHIFT</a> · <a href="https://github.com/RobertKodes/nightshift" target="_blank" rel="noopener">GitHub</a></span>
   </footer>
 </div>
@@ -121,7 +121,7 @@ function chart(samples) {
 
 async function load() {
   try {
-    const [st, inc] = await Promise.all([fetch('/status').then((r) => r.json()), fetch('/incidents').then((r) => r.json())]);
+    const [st, inc] = await Promise.all([fetch('status').then((r) => r.json()), fetch('incidents').then((r) => r.json())]);
     const open = st.openIncidents || [];
     const label = { ok: 'All systems normal', degraded: 'Degraded', down: 'Incident in progress' }[st.status] || st.status;
     $('overall').className = `pill ${st.status}`;
